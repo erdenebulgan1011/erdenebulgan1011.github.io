@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tergel Group Employment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .service-item {
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        [lang="mn"] {
+            display: none;
+        }
+
+        .lang-mn [lang="mn"] {
+            display: block;
+        }
+
+        .lang-mn [lang="en"] {
+            display: none;
+        }
+        /* New styles for header */
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-circles {
+            display: flex;
+            align-items: center;
+            gap: -5px;
+        }
+
+        .logo-circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-white flex flex-col min-h-screen" id="mainBody">
+    <header class="bg-blue-800 text-white p-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="flex items-center space-x-8">
+                <!-- Logo Group -->
+                <!-- Logo Group -->
+            <!-- Logo SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                <circle cx="20" cy="15" r="10" fill="#4287f5" opacity="0.8"/>
+                <circle cx="13" cy="25" r="10" fill="#ff0000" opacity="0.8"/>
+                <circle cx="27" cy="25" r="10" fill="#ffd700" opacity="0.8"/>
+            </svg>
+
+            <!-- Company Name -->
+            <span class="text-2xl font-bold text-white">TERGEL GROUP</span>
+
+
+                
+                <!-- Language Toggle -->
+                <button onclick="toggleLanguage()" class="bg-white text-blue-800 px-3 py-1 rounded hover:bg-gray-200 transition-colors">
+                    <span class="language-toggle">MN</span>
+                </button>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4">
+                    <li><a href="#about" class="nav-link hover:text-gray-300" lang="en">About</a></li>
+                    <li><a href="#about" class="nav-link hover:text-gray-300" lang="mn">Бидний тухай</a></li>
+                    <li><a href="#services" class="nav-link hover:text-gray-300" lang="en">Services</a></li>
+                    <li><a href="#services" class="nav-link hover:text-gray-300" lang="mn">Үйлчилгээ</a></li>
+                    <li><a href="#why-us" class="nav-link hover:text-gray-300" lang="en">Why Us</a></li>
+                    <li><a href="#why-us" class="nav-link hover:text-gray-300" lang="mn">Яагаад бид</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-gray-300" lang="en">Contact</a></li>
+                    <li><a href="#contact" class="nav-link hover:text-gray-300" lang="mn">Холбоо барих</a></li>
+                    <li><a href="https://docs.google.com/forms/d/1Vdf9C1xiwX05ssE4qDTb5ievUjMoEUxEKSzKSAAkad4/viewform?fbclid=IwY2xjawH8QrVleHRuA2FlbQIxMQABHdzPNW0EED4eFSYjzXoL9rLLSTEkyf8bW1iGYvuPIrJTEhnGSn-xM5FFYg_aem_GtIwgJZZJkpMr8kqr0JeYw&edit_requested=true" class="nav-link hover:text-gray-300" lang="en">register</a></li>
+                    <li><a href="https://docs.google.com/forms/d/1Vdf9C1xiwX05ssE4qDTb5ievUjMoEUxEKSzKSAAkad4/viewform?fbclid=IwY2xjawH8QrVleHRuA2FlbQIxMQABHdzPNW0EED4eFSYjzXoL9rLLSTEkyf8bW1iGYvuPIrJTEhnGSn-xM5FFYg_aem_GtIwgJZZJkpMr8kqr0JeYw&edit_requested=true" class="nav-link hover:text-gray-300" lang="mn">Бүртгүүлэх</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-8 flex-grow">
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6" lang="en">About Us</h2>
+            <h2 class="text-3xl font-semibold mb-6" lang="mn">Бидний тухай</h2>
+            
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <p class="text-gray-700 mb-4" lang="en">
+                    Tergel Group provides quality and reliable employment opportunities for Mongolian workers in the fields of construction, cleaning, and factory in Sydney, Australia. We serve as a bridge between employers and workers, facilitating the placement of skilled and responsible workers in the workplace, while striving to create mutually beneficial collaboration.
+                </p>
+                <p class="text-gray-700 mb-4" lang="mn">
+                    Тэргэл Групп нь Австрали улсын Сидней хот дахь Монгол ажиллах хүчнийг барилга, цэвэрлэгээ болон үйлдвэрийн салбарт чанартай, найдвартай ажлын байраар хангадаг. Бид ажил олгогч болон ажилчдын хоорондын гүүр болж, мэргэжлийн ур чадвартай, хариуцлагатай ажилчдыг ажлын байранд зуучилж, харилцан үр ашигтай хамтын ажиллагааг бий болгохыг эрхэмлэдэг.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6" lang="en">Our Services</h2>
+            <h2 class="text-3xl font-semibold mb-6" lang="mn">Бидний санал болгож буй үйлчилгээ</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Construction -->
+                <div class="service-item bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4" lang="en">Construction Labour Hire</h3>
+                    <h3 class="text-xl font-semibold mb-4" lang="mn">Барилгын туслах ажилтан</h3>
+                    <ul class="space-y-2">
+                        <li lang="en">• Site Labour</li>
+                        <li lang="mn">• Барилгын талбайн туслах</li>
+                        <li lang="en">• Demolition Labour</li>
+                        <li lang="mn">• Нураалтын ажилтан</li>
+                        <li lang="en">• Tiler</li>
+                        <li lang="mn">• Тайлэр</li>
+                    </ul>
+                </div>
+
+
+                <!-- Cleaning -->
+                <div class="service-item bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4" lang="en">Cleaning Staff</h3>
+                    <h3 class="text-xl font-semibold mb-4" lang="mn">Цэвэрлэгээний ажилтан</h3>
+                    <ul class="space-y-2">
+                        <li lang="en">• Construction cleaning</li>
+                        <li lang="mn">• Барилга цэвэрлэгээ</li>
+                        <li lang="en">• End-off lease cleaning</li>
+                        <li lang="mn">• Байр цэвэрлэгээ</li>
+                        <li lang="en">• General cleaning</li>
+                        <li lang="mn">• Ерөнхий цэвэрлэгээ</li>
+                        <li lang="en">• Housekeeping</li>
+                        <li lang="mn">• Буудал цэвэрлэгээ</li>
+                    </ul>
+                </div>
+
+                <!-- Factory -->
+                <div class="service-item bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Factory Worker</h3>
+                    <p class="text-gray-700" lang="en">Professional factory worker placement services</p>
+                    <p class="text-gray-700" lang="mn">Мэргэжлийн үйлдвэрийн ажилчдын үйлчилгээ</p>
+                    
+                </div>
+            </div>
+            
+            <!-- Test with different path formats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+        <img src="IMGWORKER.jpg" alt="Construction" class="w-full h-64 object-cover">
+        <img src="/IMGHKK.PNG" alt="Cleaning" class="w-full h-64 object-cover">
+        <img src="/IMGFactor.JPG" alt="Factory" class="w-full h-64 object-cover">
+    </div>
+
+    <!-- Fallback test with different case -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-4">
+        <img src="imgworker.jpg" alt="Construction" class="w-full h-64 object-cover">
+        <img src="imghkk.png" alt="Cleaning" class="w-full h-64 object-cover">
+        <img src="imgfactor.jpg" alt="Factory" class="w-full h-64 object-cover">
+    </div>
+
+
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6" lang="en">Why Choose Us</h2>
+            <h2 class="text-3xl font-semibold mb-6" lang="mn">Яагаад биднийг сонгох вэ?</h2>
+            
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <p class="text-gray-700 mb-4" lang="en">
+                    Mongolian workers ensure workplace safety in the construction, factory and cleaning sectors in Australia, prioritizing client satisfaction while being recognized for their performance, skills, and dedication.
+                </p>
+                <p class="text-gray-700 mb-4" lang="mn">
+                    Монголчууд нь Австрали улсын барилга болон цэвэрлэгээний салбарт ажлын байрны аюулгүй байдлыг ханган, үйлчлүүлэгчийн сэтгэл ханамжийг нэн тэргүүнд тавин ажилладаг ба ажлын гүйцэтгэл, ур чадвар, тууштай байдлаараа үнэлэгддэг болсон.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-semibold mb-6" lang="en">Contact Us</h2>
+            <h2 class="text-3xl font-semibold mb-6" lang="mn">Холбоо барих</h2>
+            
+            <div class="bg-gray-50 p-6 rounded-lg">
+                <div class="space-y-4">
+                    <p><i class="fab fa-facebook-square text-blue-600"></i> <a href="https://www.facebook.com/tergelgroup/" class="text-blue-600 hover:underline" target="_blank">Facebook</a></p>
+                    <p><i class="fab fa-instagram text-pink-600"></i> Instagram</p>
+                    <p><i class="fas fa-phone text-green-600"></i> Phone: +61-0426980196</p>
+                    <p><i class="fas fa-map-marker-alt text-red-600"></i> Address: 3 Half St, Wentworth Point, Sydney, NSW</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-800 text-white text-center p-4 mt-auto">
+        <p>&copy; <?php echo date('Y'); ?> Tergel Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const body = document.getElementById('mainBody');
+            const toggleButton = document.querySelector('.language-toggle');
+            
+            if (body.classList.contains('lang-mn')) {
+                body.classList.remove('lang-mn');
+                toggleButton.textContent = 'MN';
+            } else {
+                body.classList.add('lang-mn');
+                toggleButton.textContent = 'EN';
+            }
+        }
+    </script>
+</body>
+</html>
