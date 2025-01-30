@@ -176,31 +176,19 @@
                 </div>
             </div>
             
-            <div class="relative group">
-            <img 
-                src="./IMGWORKER.jpg" 
-                alt="Construction Work" 
-                class="w-full h-64 object-cover rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
-            >
-        </div>
-        
-        <!-- Cleaning Staff Image -->
-        <div class="relative group">
-            <img 
-                src="./IMGHKK.PNG" 
-                alt="Cleaning Staffs" 
-                class="w-full h-64 object-cover rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
-            >
-        </div>
-        
-        <!-- Factory Workers Image -->
-        <div class="relative group">
-            <img 
-                src="./IMGFactor.JPG" 
-                alt="Factory Workers" 
-                class="w-full h-64 object-cover rounded-lg shadow-sm group-hover:shadow-md transition-shadow"
-            >
-        </div>
+            <!-- Test with different path formats -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+        <img src="IMGWORKER.jpg" alt="Construction" class="w-full h-64 object-cover">
+        <img src="/IMGHKK.PNG" alt="Cleaning" class="w-full h-64 object-cover">
+        <img src="/IMGFactor.JPG" alt="Factory" class="w-full h-64 object-cover">
+    </div>
+
+    <!-- Fallback test with different case -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 mt-4">
+        <img src="imgworker.jpg" alt="Construction" class="w-full h-64 object-cover">
+        <img src="imghkk.png" alt="Cleaning" class="w-full h-64 object-cover">
+        <img src="imgfactor.jpg" alt="Factory" class="w-full h-64 object-cover">
+    </div>
 
 
         </section>
